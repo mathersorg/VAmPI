@@ -5,7 +5,7 @@ WORKDIR /vampi
 RUN pip install -r requirements.txt
 
 # Build a fresh container, copying across files & compiled parts.
-FROM python:3.8-alpine
+FROM python:3.6-alpine
 COPY . /vampi
 WORKDIR /vampi
 COPY --from=builder /usr/local/lib /usr/local/lib
