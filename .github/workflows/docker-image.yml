@@ -42,7 +42,7 @@ jobs:
       # - name: Push vulnerable image to docker hub
       #   run: docker push mathersb2j/vampi-vulnerable:latest
 
-      # AWS ECR Image Build/Push test
+      # AWS ECR Image Build/Push
       - name: Checkout
         uses: actions/checkout@v2
 
